@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For iFrame</title>
+    <style>
+      li{
+        list-style: none;
+      }
+      .buttonsContainer{
+        float: left;
+        width: 18%;
+      }
+      iFrame{
+        width: 78%;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- parent div  -->
+    <div>
+      <!-- div for buttons  -->
+      <div class="buttonsContainer">
+        <ul>
+          <li>
+            <button><a href="formModel.html" target="frame">html Form</a></button>
+          </li>
+          <li>
+            <button><a href="tableTestAgain.html" target="frame">html Table</a></button>
+          </li>
+          <li>
+            <button><a href="boxTest.html" target="frame">html Box</a></button>
+          </li>
+        </ul>
+      </div>
+      <!-- div for iFrame design -->
+      <div class="iFrameContainer">
+        <iframe src="tableTestAgain.html" frameborder="1" name="frame"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
