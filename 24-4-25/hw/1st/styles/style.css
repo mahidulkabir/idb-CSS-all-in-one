@@ -1,6 +1,27 @@
 *{
     margin: 0;
 }
+/* banner section  */
+.bannerContainer{
+    background-image: url(../images/21.jpg);
+    text-align: center;
+    padding: 50px 0;
+  
+    
+}
+.bannerTextContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px ;
+}
+.bannerDiv1{
+    background-color: aliceblue;
+    width: 300px;
+    padding: 10px;
+}
+
+
+/* logo section  */
 body{
     background-color: #F1EFEC;
 }
