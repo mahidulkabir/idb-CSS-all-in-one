@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframe</title>
+    <style>
+      li {
+        list-style: none;
+
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      .div1 {
+        width: 18%;
+        float: left;
+        border: 1px solid black;
+        height: 600px;
+      }
+    
+      iframe{
+        width: 78%;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div1">
+        <ul>
+          <li> <button><a href="htmlForm.html" target="iFrame">html Form</a> </button></li>
+          <br> <br>
+          <li> <button><a href="./HTMLTable.html " target="iFrame"> html Table</a></button></li>
+        </ul>
+      </div>
+      <div class="div2">
+        <iframe src="./htmlForm.html" frameborder="1" name="iFrame"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
