@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #E1EEBC;
+}
+.navbarContainer{
+    width: 100%;
+    background-color: #90C67C;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+    background-color: #67AE6E;
+    
+}
+.menu{
+    width: 60%;
+    
+
+}
+.menu ul{
+    display: flex;
+
+}
+.menu li{
+    list-style: none;
+  
+    border: 1px solid #90C67C;
+    padding: 20px 50px;
+}
+.menu a{
+    text-decoration: none;
+    color: inherit;
+   
+}
+.menu li:hover{
+    
+    color: #E1EEBC;
+    background-color: #67AE6E;
+}
+.search{
+    width: 20%;
+    display: flex;
+    gap: 10px;
+    background-color: #67AE6E;
+    /* border: 1px solid; */
+    padding: 20px 5px;
+}
