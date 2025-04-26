@@ -11,31 +11,29 @@ body{
     align-items: center;
 }
 .logo{
-    width: 20%;
-    background-color: #67AE6E;
-    
+    width: 20%;    
 }
 .menu{
     width: 60%;
     
 
 }
-.menu ul{
+.menu > ul{
     display: flex;
 
 }
-.menu li{
+.menu > ul >li{
     list-style: none;
   
     border: 1px solid #90C67C;
     padding: 20px 50px;
 }
-.menu a{
+.menu >ul> li > a{
     text-decoration: none;
     color: inherit;
    
 }
-.menu li:hover{
+.menu ul>  li:hover{
     
     color: #E1EEBC;
     background-color: #67AE6E;
@@ -44,7 +42,23 @@ body{
     width: 20%;
     display: flex;
     gap: 10px;
-    background-color: #67AE6E;
-    /* border: 1px solid; */
     padding: 20px 5px;
+}
+.dropDownParent{
+    position: relative;
+}
+.dropDown{
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    color: black;
+}
+.dropDown li{
+    list-style: none;
+    border: 1px solid #90C67C;
+    padding: 20px 50px;
+
+}
+.menu > ul >li:hover .dropDown {
+    display: block;
 }
