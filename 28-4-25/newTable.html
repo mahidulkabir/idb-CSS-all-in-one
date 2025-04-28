@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new table</title>
+    <style>
+      table,
+      td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: 100% ;
+    }
+    td {
+        
+        width: 150px;
+        border-spacing: 10px;
+        
+      }
+      tr{
+        background-color: blanchedalmond;
+      }
+      tr:hover{
+        background-color: aquamarine;
+        color: blue;
+        
+      }
+      .right{
+        text-align: right;
+      }
+      .center{
+        text-align: center;
+      }
+      .extra{
+        width: 400px;
+        text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr style="text-align: center ; background-color: blueviolet; color: white;">
+        <td>Col - 1</td>
+        <td>Col - 2</td>
+        <td>Col - 3</td>
+        <td>Col - 4</td>
+      </tr>
+      <tr >
+        <td class="left">Left</td>
+        <td class="right">Right</td>
+        <td class="center" >Center</td>
+        <td class="extra">Justify the content</td>
+      </tr>
+      <tr>
+        <td class="left">Left</td>
+        <td class="right">Right</td>
+        <td class="center">Center</td>
+        <td  class="extra">Justify the content</td>
+      </tr>
+      <tr>
+        <td class="left">Left</td>
+        <td class="right">Right</td>
+        <td class="center">Center</td>
+        <td class="extra">Justify the content</td>
+      </tr>
+    </table>
+  </body>
+</html>
