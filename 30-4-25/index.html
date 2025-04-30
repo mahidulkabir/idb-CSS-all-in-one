@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+        .grid-Container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) ;
+        }
+        .grid-Container div{
+            background-color: aqua;
+            border: 1px solid black;
+        }
+        .grid-item1{
+            grid-row: span 2;
+            /* height: 100vh; */
+        }
+        .grid-item2{
+            grid-column: span 2;
+            
+        }
+        .image-formating{
+            object-fit: contain;
+            width: 50vw;
+            height: 100vh;
+                }
+
+        /* sidebar menu section  */
+        .grid-item1 ul li{
+            height: 30px;
+            background-color: antiquewhite;
+            list-style: none;
+            
+        }
+        .grid-item1 ul{
+            padding: 0;
+        }
+        .grid-item3, .grid-item4{
+            height: 100px;
+        }
+
+        /* header bar section  */
+        .header{
+            background-color: aqua;
+            width: 50px;
+            display: flex;
+            width: 100%;
+        }
+        .logo{
+            width: 20%;
+            
+        }
+        .menu{
+            width: 50%;
+        }
+        .search{
+            width: 30%;
+        }
+        .menu-parent{
+            display: flex;
+        }
+        .menu-parent li{
+            padding: 20px;
+            list-style: none;
+            
+        }
+        .menu-parent li:hover{
+            background-color: antiquewhite;
+        }
+
+
+        /* footer section  */
+        .footer{
+            height: 200px;
+            background-color: beige;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- header section  -->
+    <div class="header">
+        <div class="logo">
+            <h1>logo</h1>
+        </div>
+        <div class="menu">
+            <ul class="menu-parent" >
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="search" name="" id="">
+            <button>Search </button>
+        </div>
+    </div>
+
+    <!-- main body part  -->
+    <div class="grid-Container">
+        <div class="grid-item1">
+
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul>
+
+        </div>
+        <div class="grid-item2"><img src="./images/premium_photo-1676496046182-356a6a0ed002.avif" alt="" class="image-formating" ></div>
+        <div class="grid-item3">grid item 3</div>
+        <div class="grid-item4">grid item 4</div>
+       
+    </div>
+
+    <!-- footer section  -->
+     <div class="footer">
+        <p>this is foooter</p>
+     </div>
+</body>
+</html>
